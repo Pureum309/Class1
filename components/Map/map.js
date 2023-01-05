@@ -5,6 +5,13 @@ import style from '../../styles/Home.module.css'
 
 import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker } from 'react-leaflet'
 
+// function GetIcon() {
+//     return L.icon({
+//         iconUrl: "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|abcdef&chf=a,s,ee00FFFF",
+//         iconSize: 50,
+//     })
+// }
+
 export default function Map() {
 
     const waterfront = [49.28594, -123.11129];
@@ -27,9 +34,11 @@ export default function Map() {
     const braid = [49.23310893378634, -122.88297989432266];
     const lougheed = [49.248789038247686, -122.89722340127271];
     const productionWay = [49.253672556202254, -122.91872242836777];
-
-
-
+    //Surrey
+    const scott = [49.20471128321348, -122.87402016143083];
+    const gateway = [49.1996395517773, -122.85066524767126];
+    const surreyCentral = [49.189969431491576, -122.84800706742232];
+    const kingGeorge = [49.18311468493535, -122.84484248491187];
 
     const productionline = [
         waterfront,
@@ -64,11 +73,127 @@ export default function Map() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <Marker position={waterfront}>
+            <Marker position={waterfront} /*icon={GetIcon()}*/>
                 <Popup>
-                    Skytrain. <br/> Waterfront.
+                    Sky train: Expo Line <br/> Waterfront Station
                 </Popup>
             </Marker>
+            <Marker position={burrard} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={granville} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={chinaTown} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={mainStreet} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={commercial} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={nanaimo} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={twentynineth} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={joyce} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={patterson} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={metroTown} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={royalOak} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={edmonds} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={twentytwo} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={newWest} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={columbia} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={sapperton} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={braid} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={lougheed} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={productionWay} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={scott} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={gateway} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={surreyCentral} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+            <Marker position={kingGeorge} /*icon={GetIcon()}*/>
+                <Popup>
+                    Sky train: Expo Line <br/> Waterfront Station
+                </Popup>
+            </Marker>
+           
 
             <CircleMarker center={productionWay} pathOptions={redOption} radius={20} >
                 <Popup>Final Destination</Popup>

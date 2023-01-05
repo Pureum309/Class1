@@ -63,6 +63,14 @@ export default function Map() {
         productionWay
     ]
 
+    const surryline = [
+        columbia,
+        scott,
+        gateway,
+        surreyCentral,
+        kingGeorge
+    ]
+
     const purpleOption = { color: 'purple' };
     const redOption = { color: 'red' };
 
@@ -80,126 +88,130 @@ export default function Map() {
             </Marker>
             <Marker position={burrard} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Burrard Station
                 </Popup>
             </Marker>
             <Marker position={granville} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Granville Station
                 </Popup>
             </Marker>
             <Marker position={chinaTown} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Stadium-Chinatown Station
                 </Popup>
             </Marker>
             <Marker position={mainStreet} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Main Street–Science World Station
                 </Popup>
             </Marker>
             <Marker position={commercial} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Commercial–Broadway Station
                 </Popup>
             </Marker>
             <Marker position={nanaimo} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Nanaimo Station
                 </Popup>
             </Marker>
             <Marker position={twentynineth} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> 29th Avenue Station
                 </Popup>
             </Marker>
             <Marker position={joyce} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Joyce–Collingwood Station
                 </Popup>
             </Marker>
             <Marker position={patterson} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Patterson Station
                 </Popup>
             </Marker>
             <Marker position={metroTown} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Metrotown Station
                 </Popup>
             </Marker>
             <Marker position={royalOak} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Royal Oak Station
                 </Popup>
             </Marker>
             <Marker position={edmonds} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Edmonds Station
                 </Popup>
             </Marker>
             <Marker position={twentytwo} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> 22nd Street Station
                 </Popup>
             </Marker>
             <Marker position={newWest} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> New Westminster Station
                 </Popup>
             </Marker>
             <Marker position={columbia} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Columbia Station
                 </Popup>
             </Marker>
             <Marker position={sapperton} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Sapperton Station
                 </Popup>
             </Marker>
             <Marker position={braid} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Braid Station
                 </Popup>
             </Marker>
             <Marker position={lougheed} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Lougheed Town Station
                 </Popup>
             </Marker>
             <Marker position={productionWay} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Production Way-University Station
                 </Popup>
             </Marker>
             <Marker position={scott} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Scott Road Station
                 </Popup>
             </Marker>
             <Marker position={gateway} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Gateway Station
                 </Popup>
             </Marker>
             <Marker position={surreyCentral} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> Surrey Central Station
                 </Popup>
             </Marker>
             <Marker position={kingGeorge} /*icon={GetIcon()}*/>
                 <Popup>
-                    Sky train: Expo Line <br/> Waterfront Station
+                    Sky train: Expo Line <br/> King George Station
                 </Popup>
             </Marker>
            
-
             <CircleMarker center={productionWay} pathOptions={redOption} radius={20} >
                 <Popup>Final Destination</Popup>
             </CircleMarker>
 
+            <CircleMarker center={kingGeorge} pathOptions={redOption} radius={20} >
+                <Popup>Final Destination</Popup>
+            </CircleMarker>
+
             <Polyline pathOptions={purpleOption} positions={productionline} />
+            <Polyline pathOptions={purpleOption} positions={surryline} />
         </MapContainer>
     )
 }

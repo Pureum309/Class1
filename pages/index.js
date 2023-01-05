@@ -18,8 +18,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderComp />
+      <hr style={{bordercolor:"#bbb", opacity: 0.5}}/>
       <main className={styles.main}>
-        <Map/>
+        <div className={styles.title}>
+          <h3>Expo Line connects Downtown Vancouver with the cities of Burnaby, New Westminster, and Surrey.</h3>
+        </div>
+        <Map className={styles.mapCont} />
+        <div className={styles.titleCont}>
+          <div className={styles.firstList}>
+            <h3>The Expo Line operates two routes:</h3>
+            <ul>
+                <li>Waterfront Station (Downtown Vancouver) to King George Station (Surrey)</li>
+                <li>Waterfront Station (Downtown Vancouver) to King George Station (Surrey)</li>
+            </ul>
+          </div>
+          <div className={styles.firstList}>
+            <h3>Transfer to the Millennium Line at the following stations:</h3>
+            <ul>
+                <li>Commercial–Broadway Station</li>
+                <li>Lougheed Town Center Station</li>
+                <li>Production Way-University Station</li>
+            </ul>
+          </div>
+        </div>
       </main>
       <FooterComp />
     </>

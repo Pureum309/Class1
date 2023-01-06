@@ -2,15 +2,16 @@ import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import style from '../../styles/Home.module.css'
+import L from 'leaflet'
 
 import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker } from 'react-leaflet'
 
-// function GetIcon() {
-//     return L.icon({
-//         iconUrl: "https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|abcdef&chf=a,s,ee00FFFF",
-//         iconSize: 50,
-//     })
-// }
+function GetIcon() {
+    return L.icon({
+        iconUrl: "metro.png",
+        iconSize: 30,
+    });
+}
 
 export default function Map() {
 
@@ -81,134 +82,134 @@ export default function Map() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <Marker position={waterfront} /*icon={GetIcon()}*/>
+            <Marker position={waterfront} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Waterfront Station
                 </Popup>
             </Marker>
-            <Marker position={burrard} /*icon={GetIcon()}*/>
+            <Marker position={burrard} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Burrard Station
                 </Popup>
             </Marker>
-            <Marker position={granville} /*icon={GetIcon()}*/>
+            <Marker position={granville} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Granville Station
                 </Popup>
             </Marker>
-            <Marker position={chinaTown} /*icon={GetIcon()}*/>
+            <Marker position={chinaTown} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Stadium-Chinatown Station
                 </Popup>
             </Marker>
-            <Marker position={mainStreet} /*icon={GetIcon()}*/>
+            <Marker position={mainStreet} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Main Street–Science World Station
                 </Popup>
             </Marker>
-            <Marker position={commercial} /*icon={GetIcon()}*/>
+            <Marker position={commercial} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Commercial–Broadway Station
                 </Popup>
             </Marker>
-            <Marker position={nanaimo} /*icon={GetIcon()}*/>
+            <Marker position={nanaimo} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Nanaimo Station
                 </Popup>
             </Marker>
-            <Marker position={twentynineth} /*icon={GetIcon()}*/>
+            <Marker position={twentynineth} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> 29th Avenue Station
                 </Popup>
             </Marker>
-            <Marker position={joyce} /*icon={GetIcon()}*/>
+            <Marker position={joyce} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Joyce–Collingwood Station
                 </Popup>
             </Marker>
-            <Marker position={patterson} /*icon={GetIcon()}*/>
+            <Marker position={patterson} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Patterson Station
                 </Popup>
             </Marker>
-            <Marker position={metroTown} /*icon={GetIcon()}*/>
+            <Marker position={metroTown} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Metrotown Station
                 </Popup>
             </Marker>
-            <Marker position={royalOak} /*icon={GetIcon()}*/>
+            <Marker position={royalOak} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Royal Oak Station
                 </Popup>
             </Marker>
-            <Marker position={edmonds} /*icon={GetIcon()}*/>
+            <Marker position={edmonds} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Edmonds Station
                 </Popup>
             </Marker>
-            <Marker position={twentytwo} /*icon={GetIcon()}*/>
+            <Marker position={twentytwo} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> 22nd Street Station
                 </Popup>
             </Marker>
-            <Marker position={newWest} /*icon={GetIcon()}*/>
+            <Marker position={newWest} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> New Westminster Station
                 </Popup>
             </Marker>
-            <Marker position={columbia} /*icon={GetIcon()}*/>
+            <Marker position={columbia} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Columbia Station
                 </Popup>
             </Marker>
-            <Marker position={sapperton} /*icon={GetIcon()}*/>
+            <Marker position={sapperton} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Sapperton Station
                 </Popup>
             </Marker>
-            <Marker position={braid} /*icon={GetIcon()}*/>
+            <Marker position={braid} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Braid Station
                 </Popup>
             </Marker>
-            <Marker position={lougheed} /*icon={GetIcon()}*/>
+            <Marker position={lougheed} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Lougheed Town Station
                 </Popup>
             </Marker>
-            <Marker position={productionWay} /*icon={GetIcon()}*/>
+            <Marker position={productionWay} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Production Way-University Station
                 </Popup>
             </Marker>
-            <Marker position={scott} /*icon={GetIcon()}*/>
+            <Marker position={scott} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Scott Road Station
                 </Popup>
             </Marker>
-            <Marker position={gateway} /*icon={GetIcon()}*/>
+            <Marker position={gateway} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Gateway Station
                 </Popup>
             </Marker>
-            <Marker position={surreyCentral} /*icon={GetIcon()}*/>
+            <Marker position={surreyCentral} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> Surrey Central Station
                 </Popup>
             </Marker>
-            <Marker position={kingGeorge} /*icon={GetIcon()}*/>
+            <Marker position={kingGeorge} icon={GetIcon()}>
                 <Popup>
                     Sky Train Expo Line: <br/> King George Station
                 </Popup>
             </Marker>
            
-            <CircleMarker center={productionWay} pathOptions={redOption} radius={20} >
+            <CircleMarker center={productionWay} pathOptions={redOption} radius={30} >
                 <Popup>Transfer Millennium Line</Popup>
             </CircleMarker>
-            <CircleMarker center={lougheed} pathOptions={redOption} radius={20} >
+            <CircleMarker center={lougheed} pathOptions={redOption} radius={30} >
                 <Popup>Transfer Millennium Line</Popup>
             </CircleMarker>
-            <CircleMarker center={commercial} pathOptions={redOption} radius={20} >
+            <CircleMarker center={commercial} pathOptions={redOption} radius={30} >
                 <Popup>Transfer Millennium Line</Popup>
             </CircleMarker>
 
